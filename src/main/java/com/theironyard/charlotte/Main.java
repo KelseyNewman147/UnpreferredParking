@@ -21,6 +21,12 @@ public class Main {
         listOfLots.add(new Lot(2, 25, 4));
         listOfLots.add(new Lot(3, 18, 7));
 
+        String port = System.getenv("PORT");
+
+        if (port != null) {
+            Spark.port(Integer.valueOf(port));
+        }
+
         //list the lots that are available
         Spark.get("/lot", (request, response) -> {
             System.out.println("Somebody wants to park.");
