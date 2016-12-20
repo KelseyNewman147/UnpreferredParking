@@ -1,6 +1,6 @@
 package com.theironyard.charlotte;
 
-import static com.sun.tools.doclets.formats.html.markup.HtmlStyle.description;
+//import static com.sun.tools.doclets.formats.html.markup.HtmlStyle.description;
 
 /**
  * Created by kelseynewman on 12/19/16.
@@ -49,6 +49,4 @@ public class Lot {
                 ", rate='" + rate + '\'' +
                 '}';
     }
-
-
 }
