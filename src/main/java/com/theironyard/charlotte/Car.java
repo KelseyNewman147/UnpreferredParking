@@ -11,7 +11,7 @@ public class Car {
     private int id;
 
 
-    public Car(String make, String model, int spaces, double money) {
+    public Car(String make, String model, int spaces, double money, int id) {
         this.make = make;
         this.model = model;
         this.spaces = spaces;
