@@ -40,7 +40,6 @@ public class Main {
             //data sent through request.body
             for (Lot lot : listOfLots) {
                 if (lot.id == newCar.getId()) {
-                    //how do we interpret which lot is selected by FE?
                     //make sure newCar fits into lot and has enough money to pay fee
                     if (lot.getCapacity() >= newCar.getSpaces() && newCar.getMoney() >= (newCar.getSpaces() * lot.getRate())) {
                         //park car
