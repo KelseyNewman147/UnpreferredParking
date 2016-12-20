@@ -35,6 +35,7 @@ public class Main {
 
         //try to park the car in one of the lots
         Spark.post("/park", (request, response) -> {
+            System.out.println(request.body());
             Car newCar = parser.parse(request.body(), Car.class);
             //takes in the information for the newCar that FE puts in and creates a new Car object
             //data sent through request.body
