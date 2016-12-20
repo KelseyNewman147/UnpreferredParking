@@ -11,6 +11,10 @@ public class Car {
     private int id;
 
 
+    public Car() {
+
+    }
+
     public Car(String make, String model, int spaces, double money, int id) {
         this.make = make;
         this.model = model;
