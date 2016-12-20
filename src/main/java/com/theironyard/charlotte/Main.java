@@ -5,10 +5,16 @@ import spark.Spark;
 public class Main {
 
     public static void main(String[] args) {
-        Spark.get("/", ((request, response) -> "Hello, World!"));
+        String port = System.getenv("PORT");
+
+        if (port != null) {
+            Spark.port(Integer.valueOf(port));
+        }
 
         Spark.before((request, response) -> {
             response.header("Access-Control-Allow-Origin", "*");
         });
+
+        Spark.get("/", ((request, response) -> "Hello, World!"));
     }
 }
