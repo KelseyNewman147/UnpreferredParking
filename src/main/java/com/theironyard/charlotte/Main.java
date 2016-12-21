@@ -48,7 +48,7 @@ public class Main {
                         //park car
                         //reduce lot's capacity by number of spaces car uses
                         System.out.println("Car is now parked.");
-   //                     lot.parkedCars.add(newCar);
+                        lot.parkedCars.add(newCar);
                         lot.setCapacity(lot.getCapacity() - newCar.getSpaces());
                     }
                 }
