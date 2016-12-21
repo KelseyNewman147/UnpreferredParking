@@ -14,10 +14,10 @@ public class Main {
     private static JsonSerializer serializer = new JsonSerializer();
 
     public static void main(String[] args) {
-        listOfLots.add(new Lot(0, 20, 6));
-        listOfLots.add(new Lot(1, 15, 5));
-        listOfLots.add(new Lot(2, 25, 4));
-        listOfLots.add(new Lot(3, 18, 7));
+        listOfLots.add(new Lot(0, 20, 6, Lot.getParkedCars()));
+        listOfLots.add(new Lot(1, 15, 5, Lot.getParkedCars()));
+        listOfLots.add(new Lot(2, 25, 4, Lot.getParkedCars()));
+        listOfLots.add(new Lot(3, 18, 7, Lot.getParkedCars()));
 
         Lot.parkedCars.add(new Car("Toyota", "Matrix", 2, 25, 0));
         Lot.parkedCars.add(new Car("Hyundai", "Elantra", 2, 43, 1));

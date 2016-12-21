@@ -3,6 +3,8 @@ package com.theironyard.charlotte;
 //import static com.sun.tools.doclets.formats.html.markup.HtmlStyle.description;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by kelseynewman on 12/19/16.
@@ -11,13 +13,14 @@ public class Lot {
     public int id;
     private int capacity;
     private double rate;
-    public static ArrayList<Car> parkedCars = new ArrayList<>();
+    public static ArrayList<Car>parkedCars;
 
-    public Lot(int id, int capacity, int rate) {
+    public Lot(int id, int capacity, int rate, ArrayList<Car> parkedCars) {
 
         this.id = id;
         this.capacity = capacity;
         this.rate = rate;
+        this.parkedCars = parkedCars;
     }
 
     public static ArrayList<Car> getParkedCars() {
