@@ -20,10 +20,10 @@ public class Main {
         ArrayList<Car> parkedCarsLot3 = new ArrayList<>();
 
         ArrayList<Lot> listOfLots = new ArrayList<>();
-        listOfLots.add(new Lot(0, 20, 6, parkedCarsLot0));
-        listOfLots.add(new Lot(1, 15, 5, parkedCarsLot1));
-        listOfLots.add(new Lot(2, 25, 4, parkedCarsLot2));
-        listOfLots.add(new Lot(3, 18, 7, parkedCarsLot3));
+        listOfLots.add(new Lot(0, 20, 6, 20, parkedCarsLot0));
+        listOfLots.add(new Lot(1, 15, 5, 15,  parkedCarsLot1));
+        listOfLots.add(new Lot(2, 25, 4, 25,  parkedCarsLot2));
+        listOfLots.add(new Lot(3, 18, 7, 18, parkedCarsLot3));
 
         String port = System.getenv("PORT");
 

@@ -11,18 +11,27 @@ public class Lot {
     public int id;
     private int capacity;
     private double rate;
+    private int totalSpaces;
     private ArrayList<Car> parkedCars;
 
     public Lot(){
 
     }
 
-    public Lot(int id, int capacity, int rate, ArrayList<Car> parkedCars) {
+    public Lot(int id, int capacity, int rate, int totalSpaces, ArrayList<Car> parkedCars) {
 
         this.id = id;
         this.capacity = capacity;
         this.rate = rate;
         this.parkedCars = parkedCars;
+    }
+
+    public int getTotalSpaces() {
+        return totalSpaces;
+    }
+
+    public void setTotalSpaces(int totalSpaces) {
+        this.totalSpaces = totalSpaces;
     }
 
     public ArrayList<Car> getParkedCars() {
