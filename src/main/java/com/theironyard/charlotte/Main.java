@@ -49,7 +49,7 @@ public class Main {
                         //reduce lot's capacity by number of spaces car uses
                         System.out.println("Car is now parked.");
                         lot.parkedCars.add(newCar);
-                 //       lot.setCapacity(lot.getCapacity() - newCar.getSpaces());
+                        lot.setCapacity(lot.getCapacity() - newCar.getSpaces());
                         return serializer.deep(true).serialize(lot.parkedCars);
                     }
                 }
