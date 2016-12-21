@@ -19,10 +19,10 @@ public class Main {
         listOfLots.add(new Lot(2, 25, 4, Lot.getParkedCars()));
         listOfLots.add(new Lot(3, 18, 7, Lot.getParkedCars()));
 
-        Lot.parkedCars.add(new Car("Toyota", "Matrix", 2, 25, 0));
-        Lot.parkedCars.add(new Car("Hyundai", "Elantra", 2, 43, 1));
-        Lot.parkedCars.add(new Car("Toyota", "Tacoma", 3, 36, 2));
-        Lot.parkedCars.add(new Car("Toyota", "Highlander", 4, 50, 3));
+//        Lot.parkedCars.add(new Car("Toyota", "Matrix", 2, 25, 0));
+//        Lot.parkedCars.add(new Car("Hyundai", "Elantra", 2, 43, 1));
+//        Lot.parkedCars.add(new Car("Toyota", "Tacoma", 3, 36, 2));
+//        Lot.parkedCars.add(new Car("Toyota", "Highlander", 4, 50, 3));
 
         String port = System.getenv("PORT");
 

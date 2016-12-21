@@ -3,8 +3,6 @@ package com.theironyard.charlotte;
 //import static com.sun.tools.doclets.formats.html.markup.HtmlStyle.description;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by kelseynewman on 12/19/16.
