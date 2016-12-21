@@ -50,6 +50,7 @@ public class Main {
                         System.out.println("Car is now parked.");
                         lot.parkedCars.add(newCar);
                         lot.setCapacity(lot.getCapacity() - newCar.getSpaces());
+                        return serializer.deep(true).serialize(Lot.parkedCars);
                     }
                 }
             }
