@@ -11,7 +11,11 @@ public class Lot {
     public int id;
     private int capacity;
     private double rate;
-    public static ArrayList<Car>parkedCars;
+    private ArrayList<Car> parkedCars;
+
+    public Lot(){
+
+    }
 
     public Lot(int id, int capacity, int rate, ArrayList<Car> parkedCars) {
 
@@ -21,12 +25,12 @@ public class Lot {
         this.parkedCars = parkedCars;
     }
 
-    public static ArrayList<Car> getParkedCars() {
+    public ArrayList<Car> getParkedCars() {
         return parkedCars;
     }
 
-    public static void setParkedCars(ArrayList<Car> parkedCars) {
-        Lot.parkedCars = parkedCars;
+    public void setParkedCars(ArrayList<Car> parkedCars) {
+        this.parkedCars = parkedCars;
     }
 
     public int getId() {

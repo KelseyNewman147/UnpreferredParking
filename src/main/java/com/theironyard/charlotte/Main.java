@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import static spark.Spark.before;
 
 public class Main {
-    private static ArrayList<Lot> listOfLots = new ArrayList<>();
+
     private static JsonParser parser = new JsonParser();
     private static JsonSerializer serializer = new JsonSerializer();
 
@@ -19,6 +19,7 @@ public class Main {
         ArrayList<Car> parkedCarsLot2 = new ArrayList<>();
         ArrayList<Car> parkedCarsLot3 = new ArrayList<>();
 
+        ArrayList<Lot> listOfLots = new ArrayList<>();
         listOfLots.add(new Lot(0, 20, 6, parkedCarsLot0));
         listOfLots.add(new Lot(1, 15, 5, parkedCarsLot1));
         listOfLots.add(new Lot(2, 25, 4, parkedCarsLot2));
@@ -48,9 +49,9 @@ public class Main {
                         //park car
                         //reduce lot's capacity by number of spaces car uses
                         System.out.println("Car is now parked.");
-                        lot.parkedCars.add(newCar);
+                        lot.getParkedCars().add(newCar);
                         lot.setCapacity(lot.getCapacity() - newCar.getSpaces());
-                        return serializer.deep(true).serialize(lot.parkedCars);
+                        return serializer.deep(true).serialize(lot.getParkedCars());
                     }
                 }
             }
