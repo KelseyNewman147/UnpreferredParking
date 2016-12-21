@@ -59,6 +59,7 @@ public class Lot {
                 "ID=" + id +
                 ", capacity='" + capacity + '\'' +
                 ", rate='" + rate + '\'' +
+                ", parked cars" + parkedCars + '\'' +
                 '}';
     }
 }
