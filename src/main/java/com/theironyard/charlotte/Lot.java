@@ -2,6 +2,8 @@ package com.theironyard.charlotte;
 
 //import static com.sun.tools.doclets.formats.html.markup.HtmlStyle.description;
 
+import java.util.ArrayList;
+
 /**
  * Created by kelseynewman on 12/19/16.
  */
@@ -9,12 +11,21 @@ public class Lot {
     public int id;
     private int capacity;
     private double rate;
+    public static ArrayList<Car> parkedCars = new ArrayList<>();
 
     public Lot(int id, int capacity, int rate) {
 
         this.id = id;
         this.capacity = capacity;
         this.rate = rate;
+    }
+
+    public static ArrayList<Car> getParkedCars() {
+        return parkedCars;
+    }
+
+    public static void setParkedCars(ArrayList<Car> parkedCars) {
+        Lot.parkedCars = parkedCars;
     }
 
     public int getId() {

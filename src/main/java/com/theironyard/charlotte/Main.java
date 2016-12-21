@@ -13,13 +13,16 @@ public class Main {
     private static JsonParser parser = new JsonParser();
     private static JsonSerializer serializer = new JsonSerializer();
 
-
-
     public static void main(String[] args) {
         listOfLots.add(new Lot(0, 20, 6));
         listOfLots.add(new Lot(1, 15, 5));
         listOfLots.add(new Lot(2, 25, 4));
         listOfLots.add(new Lot(3, 18, 7));
+
+        Lot.parkedCars.add(new Car("Toyota", "Matrix", 2, 25, 0));
+        Lot.parkedCars.add(new Car("Hyundai", "Elantra", 2, 43, 1));
+        Lot.parkedCars.add(new Car("Toyota", "Tacoma", 3, 36, 2));
+        Lot.parkedCars.add(new Car("Toyota", "Highlander", 4, 50, 3));
 
         String port = System.getenv("PORT");
 
@@ -30,7 +33,7 @@ public class Main {
         //list the lots that are available
         Spark.get("/lot", (request, response) -> {
             System.out.println("Somebody wants to park.");
-            return serializer.serialize(listOfLots);
+            return serializer.deep(true).serialize(listOfLots);
         });
 
         //try to park the car in one of the lots
@@ -45,8 +48,9 @@ public class Main {
                         //park car
                         //reduce lot's capacity by number of spaces car uses
                         System.out.println("Car is now parked.");
+   //                     lot.parkedCars.add(newCar);
                         lot.setCapacity(lot.getCapacity() - newCar.getSpaces());
-                    }//else - if car is too big/doesn't have enough money?
+                    }
                 }
             }
             System.out.println(listOfLots);
