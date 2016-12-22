@@ -19,14 +19,9 @@ public class Main {
 
         ArrayList<Lot> listOfLots = new ArrayList<>();
         listOfLots.add(new Lot(0, 20, 6, 20, parkedCarsLot0));
-        listOfLots.add(new Lot(1, 15, 5, 15,  parkedCarsLot1));
-        listOfLots.add(new Lot(2, 25, 4, 25,  parkedCarsLot2));
+        listOfLots.add(new Lot(1, 15, 5, 15, parkedCarsLot1));
+        listOfLots.add(new Lot(2, 25, 4, 25, parkedCarsLot2));
         listOfLots.add(new Lot(3, 18, 7, 18, parkedCarsLot3));
-
-//        parkedCarsLot0.add(new Car("Toyota", "Matrix", 2, 25, 0));
-//        parkedCarsLot1.add(new Car("Hyundai", "Elantra", 1, 15, 1));
-//        parkedCarsLot2.add(new Car("Toyota", "Tacoma", 3, 30, 2));
-//        parkedCarsLot3.add(new Car("Chevrolet", "El Camino", 3, 45, 3));
 
         String port = System.getenv("PORT");
 

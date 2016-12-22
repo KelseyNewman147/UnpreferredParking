@@ -12,9 +12,10 @@ public class Lot {
     private int capacity;
     private double rate;
     private int totalSpaces;
+    //totalSpaces stays constant while capacity is updated
     private ArrayList<Car> parkedCars;
 
-    public Lot(){
+    public Lot() {
 
     }
 
@@ -66,13 +67,4 @@ public class Lot {
         this.rate = rate;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Lots available {" +
-//                "ID=" + id +
-//                ", capacity='" + capacity + '\'' +
-//                ", rate='" + rate + '\'' +
-//                ", parked cars" + parkedCars + '\'' +
-//                '}';
-//    }
 }

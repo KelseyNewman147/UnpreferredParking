@@ -10,7 +10,6 @@ public class Car {
     private double money;
     private int id;
 
-
     public Car() {
 
     }
