@@ -66,13 +66,13 @@ public class Lot {
         this.rate = rate;
     }
 
-    @Override
-    public String toString() {
-        return "Lots available {" +
-                "ID=" + id +
-                ", capacity='" + capacity + '\'' +
-                ", rate='" + rate + '\'' +
-                ", parked cars" + parkedCars + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Lots available {" +
+//                "ID=" + id +
+//                ", capacity='" + capacity + '\'' +
+//                ", rate='" + rate + '\'' +
+//                ", parked cars" + parkedCars + '\'' +
+//                '}';
+//    }
 }
