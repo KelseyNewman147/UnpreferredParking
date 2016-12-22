@@ -28,7 +28,7 @@ public class Main {
         parkedCarsLot0.add(new Car("Toyota", "Matrix", 2, 25, 0));
         parkedCarsLot1.add(new Car("Hyundai", "Elantra", 1, 15, 1));
         parkedCarsLot2.add(new Car("Toyota", "Tacoma", 3, 30, 2));
-        parkedCarsLot0.add(new Car("Chevrolet", "El Camino", 3, 45, 3));
+        parkedCarsLot3.add(new Car("Chevrolet", "El Camino", 3, 45, 3));
 
         String port = System.getenv("PORT");
 
